@@ -17,8 +17,8 @@
 	<Binding channel="1" ctl="64" action="Common/jump-forward-to-mark"/> 		<!-- > = Next marker -->
 
 	<Binding channel="1" ctl="49" action="Transport/Loop"/>						<!-- Cycle = Start loop -->
-	<Binding channel="1" ctl="48" action="Transport/Rewind"/>					<!-- << = Rewind -->
-	<Binding channel="1" ctl="47" action="Transport/Forward"/>					<!-- >> = Forward -->	
+	<Binding channel="1" ctl="47" action="Transport/Rewind"/>					<!-- << = Rewind -->
+	<Binding channel="1" ctl="48" action="Transport/Forward"/>					<!-- >> = Forward -->	
 	<Binding channel="1" ctl="46" function="transport-stop"/>					<!-- [] = Stop -->
 	<Binding channel="1" ctl="45" function="transport-roll"/>					<!-- > = Toggle Roll -->
 	<Binding channel="1" ctl="44" function="toggle-rec-enable"/>				<!-- * = Toggle record enable -->	
@@ -27,6 +27,8 @@
 	<Binding channel="1" ctl="2" action="Editor/select-next-route"/>			<!-- > = Select previous track/route -->
 
 
+
+<!-- Jog wheel forwards or backwards one grid -->
 	<Binding channel="1" msg="C0 00" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
 	<Binding channel="1" msg="C0 01" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
 	<Binding channel="1" msg="C0 02" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
@@ -35,81 +37,180 @@
 	<Binding channel="1" msg="C0 05" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
 	<Binding channel="1" msg="C0 06" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
 	<Binding channel="1" msg="C0 07" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 08" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 09" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 0A" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->	
-	<Binding channel="1" msg="C0 0B" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 0C" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 0D" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 0E" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->		
-	<Binding channel="1" msg="C0 0F" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	
+	<Binding channel="1" msg="C0 08" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 09" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 0A" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->	
+	<Binding channel="1" msg="C0 0B" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 0C" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 0D" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 0E" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->		
+	<Binding channel="1" msg="C0 0F" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
 
 	
+	<Binding channel="1" msg="C0 10" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 11" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 12" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 13" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 14" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 15" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 16" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 17" action="Common/playhead-forward-to-grid" />	
 	
-	<Binding channel="1" msg="C0 10" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 11" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 12" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 13" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 14" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 15" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 16" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 17" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 18" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 19" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 1A" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 1B" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 1C" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 1D" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 1E" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->	
-	<Binding channel="1" msg="C0 1F" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 18" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 19" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 1A" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 1B" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 1C" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 1D" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 1E" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 1F" action="Common/playhead-backward-to-grid" />	
 	
 	
-	<Binding channel="1" msg="C0 20" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 21" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 22" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 23" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 24" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 25" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 26" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 27" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 28" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 29" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 2A" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->	
-	<Binding channel="1" msg="C0 2B" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 2C" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 2D" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
-	<Binding channel="1" msg="C0 2E" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->		
-	<Binding channel="1" msg="C0 2F" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 20" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 21" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 22" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 23" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 24" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 25" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 26" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 27" action="Common/playhead-forward-to-grid" />		
+		
+	<Binding channel="1" msg="C0 28" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 29" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 2A" action="Common/playhead-backward-to-grid" />			
+	<Binding channel="1" msg="C0 2B" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 2C" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 2D" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 2E" action="Common/playhead-backward-to-grid" />				
+	<Binding channel="1" msg="C0 2F" action="Common/playhead-backward-to-grid" />		
 
 	
+	<Binding channel="1" msg="C0 30" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 31" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 32" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 33" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 34" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 35" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 36" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 37" action="Common/playhead-forward-to-grid" />	
 	
-	<Binding channel="1" msg="C0 30" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 31" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 32" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 33" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 34" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 35" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 36" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 37" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 38" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 39" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 3A" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 3B" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 3C" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 3D" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
-	<Binding channel="1" msg="C0 3E" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->	
-	<Binding channel="1" msg="C0 3F" action="Common/playhead-backward-to-grid" />	<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 38" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 39" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 3A" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 3B" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 3C" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 3D" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 3E" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 3F" action="Common/playhead-backward-to-grid" />	
+
+
+	<Binding channel="1" msg="C0 40" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 41" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 42" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 43" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 44" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 45" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 46" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
+	<Binding channel="1" msg="C0 47" action="Common/playhead-forward-to-grid" />		<!-- Jog wheel forwards playhead one grid -->
 	
+	<Binding channel="1" msg="C0 48" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 49" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 4A" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->	
+	<Binding channel="1" msg="C0 4B" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 4C" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 4D" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+	<Binding channel="1" msg="C0 4E" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->		
+	<Binding channel="1" msg="C0 4F" action="Common/playhead-backward-to-grid" />		<!-- Jog wheel backwards playhead one grid -->
+
+	
+	<Binding channel="1" msg="C0 50" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 51" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 52" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 53" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 54" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 55" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 56" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 57" action="Common/playhead-forward-to-grid" />	
+
+	<Binding channel="1" msg="C0 58" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 59" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 5A" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 5B" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 5C" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 5D" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 5E" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 5F" action="Common/playhead-backward-to-grid" />	
+	
+	
+	<Binding channel="1" msg="C0 60" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 61" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 62" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 63" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 64" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 65" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 66" action="Common/playhead-forward-to-grid" />		
+	<Binding channel="1" msg="C0 67" action="Common/playhead-forward-to-grid" />		
+		
+	<Binding channel="1" msg="C0 68" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 69" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 6A" action="Common/playhead-backward-to-grid" />			
+	<Binding channel="1" msg="C0 6B" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 6C" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 6D" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 6E" action="Common/playhead-backward-to-grid" />				
+	<Binding channel="1" msg="C0 6F" action="Common/playhead-backward-to-grid" />		
+
+	
+	<Binding channel="1" msg="C0 70" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 71" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 72" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 73" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 74" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 75" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 76" action="Common/playhead-forward-to-grid" />	
+	<Binding channel="1" msg="C0 77" action="Common/playhead-forward-to-grid" />	
+	
+	<Binding channel="1" msg="C0 78" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 79" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 7A" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 7B" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 7C" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 7D" action="Common/playhead-backward-to-grid" />	
+	<Binding channel="1" msg="C0 7E" action="Common/playhead-backward-to-grid" />		
+	<Binding channel="1" msg="C0 7F" action="Common/playhead-backward-to-grid" />		
   
-  <!-- Banks  -->
+  
+  
+<!-- Banks  -->
 	<Binding sysex="F0 42 40 00 01 04 00 5F 4F 00 F7" function="set-bank" argument="0"/>
 	<Binding sysex="F0 42 40 00 01 04 00 5F 4F 01 F7" function="set-bank" argument="1"/>
 	<Binding sysex="F0 42 40 00 01 04 00 5F 4F 02 F7" function="set-bank" argument="2"/>
 	<Binding sysex="F0 42 40 00 01 04 00 5F 4F 03 F7" function="set-bank" argument="3"/>
  
 
+<!-- Strip 1 - Master:                                                      -->
+<!-- Mute assigned to Mute							                        -->
+<!-- Solo assigned to transport-start			                            -->
+<!-- Rec assigned to transport-end											-->
+<!-- Select unassigned														-->
+<!-- Rotary encoder assigned to Master Pan Width (easy to audition in mono!)-->
+<!-- Fader assigned to Master Gain 	
+										-->
+<!--	
+	<Binding channel="1" ctl="21" uri="/bus/mute master"/>
+	<Binding channel="1" ctl="29" function="transport-start"/>
+	<Binding channel="1" ctl="38" function="transport-end"/>	
+	<Binding channel="1" ctl="46" action="Transport/RecordCountIn"/>
+	
+	<Binding channel="1" ctl="9" uri="/bus/panwidth master"/>
 
-<!-- Strip 2 : Selected track -->
+	<Binding channel="1" ctl="2" uri="/bus/gain master"/>
+-->
+
+
+
+<!-- Strip 2 : Selected track - V Strip -->
 <!-- Mute assigned to Mute							                        -->
 <!-- Solo assigned to Solo						                            -->
 <!-- Rec assigned to toggle record enable									-->
@@ -126,7 +227,7 @@
 
 
 
-<!-- Strips 3-8:                                                            -->
+<!-- Strips tracks/busses 1-16 Banks 1-2:                                                            -->
 <!-- Mute assigned to Mute							                        -->
 <!-- Solo assigned to Solo						                            -->
 <!-- Rec assigned to toggle record enable									-->
@@ -134,47 +235,93 @@
 <!-- Rotary encoder assigned to pan direction								-->
 <!-- Fader assigned to gain		 											-->
 
+<!-- Bank 1 -->
+<!-- Strip 1 -->
+	<Binding channel="1" ctl="92" uri="/route/solo B1"/>
+	<Binding channel="1" ctl="76" uri="/route/pandirection B1"/>
+	<Binding channel="1" ctl="84" uri="/route/gain B1"/>
+
+<!-- Strip 2 -->
+	<Binding channel="1" ctl="93" uri="/route/solo B2"/>
+	<Binding channel="1" ctl="77" uri="/route/pandirection B2"/>
+	<Binding channel="1" ctl="85" uri="/route/gain B2"/>
+
 <!-- Strip 3 -->
-	<Binding channel="1" ctl="120" uri="/route/solo B1"/>
-	<Binding channel="1" ctl="112" uri="/route/pandirection B1"/>
-	<Binding channel="1" ctl="104" uri="/route/gain B1"/>
+	<Binding channel="1" ctl="94" uri="/route/solo B3"/>
+	<Binding channel="1" ctl="78" uri="/route/pandirection B3"/>
+	<Binding channel="1" ctl="86" uri="/route/gain B3"/>
 
 <!-- Strip 4 -->
-	<Binding channel="1" ctl="121" uri="/route/solo B2"/>
-	<Binding channel="1" ctl="113" uri="/route/pandirection B2"/>
-	<Binding channel="1" ctl="105" uri="/route/gain B2"/>
+	<Binding channel="1" ctl="95" uri="/route/solo B4"/>
+	<Binding channel="1" ctl="79" uri="/route/pandirection B4"/>
+	<Binding channel="1" ctl="87" uri="/route/gain B4"/>
 
-<!-- Strip 5 -->
-	<Binding channel="1" ctl="122" uri="/route/solo B3"/>
-	<Binding channel="1" ctl="114" uri="/route/pandirection B3"/>
-	<Binding channel="1" ctl="106" uri="/route/gain B3"/>
+<!-- Strip 5 (bank strip #5) -->
+	<Binding channel="1" ctl="96" uri="/route/solo B5"/>
+	<Binding channel="1" ctl="80" uri="/route/pandirection B5"/>
+	<Binding channel="1" ctl="88" uri="/route/gain B5"/>
 
-<!-- Strip 6 -->
-	<Binding channel="1" ctl="123" uri="/route/solo B4"/>
-	<Binding channel="1" ctl="115" uri="/route/pandirection B4"/>
-	<Binding channel="1" ctl="107" uri="/route/gain B4"/>
-
-<!-- Strip 7 (bank strip #5) -->
-	<Binding channel="1" ctl="124" uri="/route/solo B5"/>
-	<Binding channel="1" ctl="116" uri="/route/pandirection B5"/>
-	<Binding channel="1" ctl="108" uri="/route/gain B5"/>
-
-<!-- Strip 8 (bank strip #6) -->
-	<Binding channel="1" ctl="125" uri="/route/solo B6"/>
-	<Binding channel="1" ctl="117" uri="/route/pandirection B6"/>
-	<Binding channel="1" ctl="109" uri="/route/gain B6"/>
+<!-- Strip 6 (bank strip #6) -->
+	<Binding channel="1" ctl="97" uri="/route/solo B6"/>
+	<Binding channel="1" ctl="81" uri="/route/pandirection B6"/>
+	<Binding channel="1" ctl="89" uri="/route/gain B6"/>
 	
-<!-- Strip 9 (bank strip #7) -->
-	<Binding channel="1" ctl="126" uri="/route/solo B7"/>
-	<Binding channel="1" ctl="118" uri="/route/pandirection B7"/>
-	<Binding channel="1" ctl="110" uri="/route/gain B7"/>	
+<!-- Strip 7 (bank strip #7) -->
+	<Binding channel="1" ctl="98" uri="/route/solo B7"/>
+	<Binding channel="1" ctl="82" uri="/route/pandirection B7"/>
+	<Binding channel="1" ctl="90" uri="/route/gain B7"/>	
 
-<!-- Strip 10 (bank strip #8) -->
+<!-- Strip 8 (bank strip #8) -->
 <!--	<Binding channel="1" ctl="28" uri="/route/mute B8"/> -->
-	<Binding channel="1" ctl="127" uri="/route/solo B8"/>
+	<Binding channel="1" ctl="99" uri="/route/solo B8"/>
 <!--	<Binding channel="1" ctl="45" uri="/route/recenable B8"/>	-->
-	<Binding channel="1" ctl="53" uri=""/>
-	<Binding channel="1" ctl="119" uri="/route/pandirection B8"/>
-	<Binding channel="1" ctl="111" uri="/route/gain B8"/>	
+<!--	<Binding channel="1" ctl="53" uri=""/> -->
+	<Binding channel="1" ctl="83" uri="/route/pandirection B8"/>
+	<Binding channel="1" ctl="91" uri="/route/gain B8"/>	
+	
+	
+<!-- Bank 2 -->
+<!-- Strip 9 -->
+	<Binding channel="1" ctl="68" uri="/route/solo B9"/>
+	<Binding channel="1" ctl="50" uri="/route/pandirection B9"/>
+	<Binding channel="1" ctl="58" uri="/route/gain B9"/>
+
+<!-- Strip 10 -->
+	<Binding channel="1" ctl="69" uri="/route/solo B10"/>
+	<Binding channel="1" ctl="51" uri="/route/pandirection B10"/>
+	<Binding channel="1" ctl="59" uri="/route/gain B10"/>
+
+<!-- Strip 11 -->
+	<Binding channel="1" ctl="70" uri="/route/solo B11"/>
+	<Binding channel="1" ctl="52" uri="/route/pandirection B11"/>
+	<Binding channel="1" ctl="60" uri="/route/gain B11"/>
+
+<!-- Strip 12 -->
+	<Binding channel="1" ctl="71" uri="/route/solo B12"/>
+	<Binding channel="1" ctl="53" uri="/route/pandirection B12"/>
+	<Binding channel="1" ctl="61" uri="/route/gain B12"/>
+
+<!-- Strip 13 -->
+	<Binding channel="1" ctl="72" uri="/route/solo B13"/>
+	<Binding channel="1" ctl="54" uri="/route/pandirection B13"/>
+	<Binding channel="1" ctl="62" uri="/route/gain B13"/>
+
+<!-- Strip 14 -->
+	<Binding channel="1" ctl="73" uri="/route/solo B14"/>
+	<Binding channel="1" ctl="55" uri="/route/pandirection B14"/>
+	<Binding channel="1" ctl="63" uri="/route/gain B14"/>
+	
+<!-- Strip 15 -->
+	<Binding channel="1" ctl="74" uri="/route/solo B15"/>
+	<Binding channel="1" ctl="56" uri="/route/pandirection B15"/>
+	<Binding channel="1" ctl="65" uri="/route/gain B15"/>	
+
+<!-- Strip 16 -->
+	<Binding channel="1" ctl="75" uri="/route/solo B16"/>
+	<Binding channel="1" ctl="57" uri="/route/pandirection B16"/>
+	<Binding channel="1" ctl="66" uri="/route/gain B16"/>		
+	
+	
+	
 
 </ArdourMIDIBindings>
