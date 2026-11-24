@@ -3,6 +3,9 @@
 <!-- Omar S. Gomez, 2021 -->
 <!-- Just copy this file in the midi-maps folder of the installed ardour or mixbus-->
 
+<!-- Ardour 9.7+ uncomment this line -->
+<!-- <ArdourMIDIBindings version="1.0.0" name="Worlde Easycontrol 9" manufacturer="Any"> -->
+
 <ArdourMIDIBindings version="1.0.0" name="Worlde easycontrol.9">
   <DeviceInfo bank-size="4" motorized="no" threshold="100"/>
   
